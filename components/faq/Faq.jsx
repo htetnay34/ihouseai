@@ -6,18 +6,18 @@ const faqs = [
   },
   {
   id: 2,
-  question: "Quels sont les avantages d'utiliser StudioIA-Interieur pour la génération d'interieurs à l'aide de l'IA ?",
-  answer: "StudioIA-Interieur offre de nombreux avantages : économie de temps, suggestions créatives personnalisées, visualisation facile des options, découverte de nouvelles idées, meilleure compréhension de l'apparence finale, itération rapide, expérimentation de styles et collaboration efficace avec clients et professionnels.",
+  question: "iHouse AI ကို သုံးဖိုဘာလိုအပ်သလဲ ?",
+  answer: "သင် ပြင်ဆင်ချင်သည့် အခန်းပုံလိုအပ်ပါမယ်။ ပြင်ချင်သည့် အခန်းကို ဓာတ်ပုံရိုက်ပါ။ အကောင့်ထဲဝင်ပြီး Dashboard ထဲမှာ AI နဲ့ ပြင်လို့ရပါပြီ",
   },
   {
   id: 3,
-  question: "Quelles sont les limites de StudioIA-Interieur pour la génération d'interieurs à l'aide de l'IA?",
-  answer: "Bien que StudioIA-Interieur offre de nombreux avantages, il présente également certaines limites : précision variable des suggestions et propositions de designs en fonction des données d'entrée et des modèles d'apprentissage, prise en compte limitée des aspects uniques d'un projet ou des préférences spécifiques d'un utilisateur, difficulté à reproduire la créativité et l'intuition humaine dans le processus de conception.",
+  question: "ပုံတွေကို စီးပွားရေးလုပ်ငန်းတွေမှာ အသုံးပြုနိုင်ပါသလား?",
+  answer: "ပုံတွေကို ပြန်လည်ရောင်းချနိုင်ပြီး လုပ်ငန်းတွေမှာ အသုံးပြုနိင်ပါတယ်",
   },
   {
   id: 4,
-  question: "Quelles mesures de sécurité sont mises en place pour garantir la sécurité des transactions ?",
-  answer: "Les paiements effectués sont sécurisés. Stripe, notre service de paiement en ligne, utilise des protocoles de cryptage avancés et respecte les normes de sécurité les plus strictes pour protéger vos informations financières.",
+  question: "အခန်းပုံတွေမဟုတ်ဘဲ အခြားပုံတွေရော ထုတ်လို့ရပါသလား ?",
+  answer: "iHouse AI သည် အခန်း အတွင်းဒီဇိုင်းတွေထုတ်ဖို့ အဓိက တည်ဆောက်ထားတာကြောင့် အခန်းပုံများသာ ကောင်းကောင်းထုတ်ပေးနိုင်ပါတယ်",
   },
   {
   id: 5,
