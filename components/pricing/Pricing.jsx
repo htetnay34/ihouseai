@@ -9,8 +9,6 @@ import { useRouter } from "next/router";
 import getDocument from "@/firebase/Firestore/getData";
 import toast, { Toaster } from "react-hot-toast";
 
-const stripe = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
-
 
 
 const tiers = [
@@ -134,7 +132,7 @@ export default function Pricing({ id }) {
     }
   };
 
- return (
+   return (
     <div className="bg-white py-24 sm:py-32" id={id}>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
@@ -205,7 +203,7 @@ export default function Pricing({ id }) {
               {user ? (
                 <button
                   onClick={(event) =>
-                    handleCheckout(
+                    handleOfflinePayment(
                       event,
                       tier.pricestripe,
                       user.email,
@@ -221,7 +219,7 @@ export default function Pricing({ id }) {
                     "mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 flex items-center justify-center gap-4"
                   )}
                 >
-                  {loading[tier.btn] ? "Chargement" : "ဝယ်မယ်"}
+                  {loading[tier.btn] ? "Chargement" : "Offline Payment"}
                   {loading[tier.btn] ? (
                     <div
                       className={classNames(
@@ -261,14 +259,8 @@ export default function Pricing({ id }) {
       {showPopup && (
         <div className="popup-container">
           <div className="popup-content">
-            {/* Add your iframe here */}
-            <iframe
-              src={`YOUR_STRIPE_CHECKOUT_URL?sessionId=${YOUR_SESSION_ID}`}
-              title="Stripe Checkout"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-            />
+            {/* Add your offline payment instructions or form here */}
+            <p>For offline payments, please follow the instructions provided.</p>
             <button onClick={handleClosePopup}>Close</button>
           </div>
         </div>
