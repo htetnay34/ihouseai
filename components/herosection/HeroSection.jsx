@@ -54,7 +54,7 @@ export default function HeroSections() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex flex flex-col lg:flex-row items-center lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-4xl text-center lg:text-left font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    AI နည်းပညာနဲ့ သင့်အခန်း ဒီဇိုင်း အပြင်အဆင်တွေကို ပြောင်းကြည့်ပါ
+                    iHouse AI နည်းပညာ
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 lg:max-w-none">
                    ကျွန်တော်တို့ရဲ့ အဆင့်မြင့် Machine Learning Model အသုံးပြုတည်ဆောက်ထားသည့် AI ကို အသုံးပြုပြီး သင့်ရဲ့ အခန်းဓာတ်ပုံကို စိတ်တိုင်းကျ ဒီဇိုင်းပုံစံအမျိုးမျိုး
