@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>StudioIA - Interieur</title>
-        <link rel="canonical" href="https://www.studioia-interieur.fr" />
+        <title>iHouse - AI Interior ဒီဇိုင်းနည်းပညာ</title>
+        <link rel="canonical" href="https://infinityai.online/ihouseai" />
       </Head>
       <Navbar />
       <HeroSections />
