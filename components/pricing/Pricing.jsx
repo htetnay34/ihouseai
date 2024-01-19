@@ -106,7 +106,13 @@ export default function Pricing({ id }) {
     setShowPopup(false);
   };
 
-  
+    const handleGoToMessenger = () => {
+    // Add logic to redirect to Facebook Messenger page
+    // Example: window.location.href = "https://www.messenger.com/";
+  };
+
+  const handleOfflinePayment = async (event, priceId, userEmail, buttonName) => {
+    event.preventDefault();
 
   const handleCheckout = async (event, priceId, userEmail, buttonName) => {
     event.preventDefault();
