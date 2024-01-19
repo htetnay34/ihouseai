@@ -54,13 +54,11 @@ export default function HeroSections() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex flex flex-col lg:flex-row items-center lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-4xl text-center lg:text-left font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    Inspirez-vous avec nos générations d'intérieurs
+                    AI နည်းပညာနဲ့ သင့်အခန်း ဒီဇိုင်း အပြင်အဆင်တွေကို ပြောင်းကြည့်ပါ
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 lg:max-w-none">
-                    Découvrez une génération d'images révolutionnaire alimentée
-                    par un modèle de machine learning avancé. Grâce à notre
-                    solution, vous pouvez transformer vos simples photos en
-                    superbes intérieurs avec facilité et créativité.{" "}
+                   ကျွန်တော်တို့ရဲ့ အဆင့်မြင့် Machine Learning Model အသုံးပြုတည်ဆောက်ထားသည့် AI ကို အသုံးပြုပြီး သင့်ရဲ့ အခန်းဓာတ်ပုံကို စိတ်တိုင်းကျ ဒီဇိုင်းပုံစံအမျိုးမျိုး
+                    ပြင်ဆင်ပြောင်းလဲပြီး ထုတ်ခိုင်းနိုင်ပါတယ်။.{" "}
                   </p>
                   <div className="mt-10 flex items-center justify-center lg:justify-start	 gap-x-6">
                     <Link
