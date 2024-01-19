@@ -129,7 +129,7 @@ export default function Pricing({ id }) {
     }
   };
 
-   return (
+return (
     <div className="bg-white py-24 sm:py-32" id={id}>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
@@ -188,10 +188,20 @@ export default function Pricing({ id }) {
                 >
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex gap-x-3">
-                      <CheckIcon
+                      <svg
                         className="h-6 w-5 flex-none text-indigo-600"
-                        aria-hidden="true"
-                      />
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
                       {feature}
                     </li>
                   ))}
