@@ -17,7 +17,7 @@ export default function ImageComparaison() {
           />
           <span className="absolute top-2 left-2">
             <span className="inline-flex items-center gap-x-0.5 rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
-              Avant
+             မပြင်ခင်
             </span>
           </span>
         </div>
@@ -31,7 +31,7 @@ export default function ImageComparaison() {
           />
           <span className="absolute top-2 right-2">
             <span className="inline-flex items-center gap-x-0.5 rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
-              Après
+              ပြင်ပြီး
             </span>
           </span>
         </div>
