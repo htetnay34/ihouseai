@@ -19,7 +19,7 @@ const tiers = [
     id: "tier-freelancer",
     href: "/auth/login",
     pricestripe: "price_1NMJepHlXD1yqYgk2wFb9iHn",
-    credits: "30",
+    credits: "50",
     priceMonthly: "၂၀၀၀၀ ကျပ် ",
     btn: "button1",
     description:
@@ -32,7 +32,7 @@ const tiers = [
     id: "tier-startup",
     href: "/auth/login",
     pricestripe: "price_1NMJdRHlXD1yqYgklSHLQ6GW",
-    credits: "100",
+    credits: "200",
     priceMonthly: "၅၀၀၀၀ ကျပ် ",
     btn: "button2",
     description:
@@ -44,7 +44,7 @@ const tiers = [
     name: " Enterprise",
     id: "tier-enterprise",
     pricestripe: "price_1NKQeaHlXD1yqYgkgY4iDbdU",
-    credits: "250",
+    credits: "500",
     href: "/auth/login",
     btn: "button3",
     priceMonthly: "၁၀၀၀၀ ကျပ် ",
@@ -156,7 +156,7 @@ export default function Pricing({ id }) {
           </p>
         </div>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-          Visa, Master Card နှင့် ATM Card ရှိသူများသည့် တိုက်ရိုက်ပေးချေပြီး Credit များကို ဝယ်ယူနိုင်ပါတယ်
+          Visa, Master Card နှင့် ATM Card ရှိသူများသည့် တိုက်ရိုက်ပေးချေပြီး Credit များကို ဝယ်ယူနိုင်ပါတယ်။ Kpay, Wave ဖြင့်ပေးချေလိုပါက အောက်ပါညွန်ကြားချက်အတိုင်းပေးချေနိုင်ပါတယ်။ 
         </p>
         <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {tiers.map((tier, tierIdx) => (
@@ -182,7 +182,7 @@ export default function Pricing({ id }) {
                   </h3>
                   {tier.mostPopular ? (
                     <p className="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">
-                      Le plus populaire
+                     အသုံးအများဆုံး Plan
                     </p>
                   ) : null}
                 </div>
@@ -232,7 +232,7 @@ export default function Pricing({ id }) {
                   )}
                 >
                   
-                  {loading[tier.btn] ? "Chargement" : "Acheter"}
+                  {loading[tier.btn] ? "Chargement" : "ဝယ်မယ်"}
                   {loading[tier.btn] ?<div className={classNames(
                     tier.mostPopular ? "download-loader text-white" :"download-loader-purple text-black" )}/> : <></>}
                 </button>
