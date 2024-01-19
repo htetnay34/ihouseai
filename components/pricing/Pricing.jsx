@@ -84,10 +84,12 @@ const [showPaymentInfo, setShowPaymentInfo] = useState(false);
     setShowPaymentInfo(false);
   };
 
-  const handleGoToMessenger = () => {
-    // Add logic to redirect to Facebook Messenger page
-    // window.location.href = "https://www.messenger.com/";
-  };
+const handleGoToMessenger = () => {
+  window.location.href = "https://m.m/infinitytechmyanmar";
+  // Alternatively, you can use other methods like window.open() or router.push() (for Next.js)
+  // to navigate the user to the desired URL.
+};
+
 
   const handleOfflinePayment = async (event, priceId, userEmail, buttonName) => {
     event.preventDefault();
@@ -125,7 +127,7 @@ return (
             ငွေပေးချေမှု
           </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            နိုင်ငံတကာသုံး ငွေပေးချေမှုစနစ်
+            Kpay,Wave ဖြင့်ပေးချေနိုင်ပါသည်
           </p>
         </div>
         <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -245,6 +247,8 @@ return (
             </div>
             <div className="modal-body">
               Kpay No - 09974902335, Name - Yan Naing Soe
+              Wave No - 09740807009, Name - Yan Naing Soe
+              ငွေလွှဲပြီးပါက Screenshot ကို Page Messenger သို့ပေးပို့အကြောင်းကြားပေးပါခင်ဗျ။ 
               <button
                 onClick={handleGoToMessenger}
                 className="bg-indigo-600 text-white py-2 px-4 rounded-md mr-2 hover:bg-indigo-500"
