@@ -1,8 +1,8 @@
 const faqs = [
   {
   id: 1,
-  question: "Qu'est-ce que StudioIA-Interieur pour la génération d'interieurs à l'aide de l'IA ?",
-  answer: "StudioIA-Interieur est une plateforme logicielle basée sur le cloud qui utilise des algorithmes d'intelligence artificielle pour créer automatiquement des designs d'intérieurs personnalisés.",
+  question: "iHouse AI ကို ဘယ်လိုဝယ်ရမလဲ ?",
+  answer: "Credit များ ဝယ်ယူလိုပါက Payment ကနေ Kpay/Wave ဖြင့်ဝယ်ယူနိုင်ပါတယ်။ Payment Information ခလုတ်လေးကို နိုပ်လိုက်ပါက Payment Information ကျလာပါမယ်။ Payment Information မှာပါသည့် ငွေလွှဲနံပါတ်များကို ငွေလွှဲပြီးဝယ်ယူနိုင်ပါတယ်",
   },
   {
   id: 2,
