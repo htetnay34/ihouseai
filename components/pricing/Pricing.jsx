@@ -1,5 +1,6 @@
 import { CheckIcon } from "@heroicons/react/20/solid";
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import axios from "axios";
 import { loadStripe } from "@stripe/stripe-js";
 import stripePromise from "@/utils/stripe";
@@ -71,6 +72,56 @@ export default function Pricing({ id }) {
   });
   const [showPaymentInfo, setShowPaymentInfo] = useState(false);
 
+     useEffect(() => {
+    const modalContainer = document.createElement("div");
+    document.body.appendChild(modalContainer);
+    setModalRoot(modalContainer);
+
+    return () => {
+      document.body.removeChild(modalContainer);
+    };
+  }, []);
+
+  const renderModal = () => {
+    if (!modalRoot || !showPaymentInfo) return null;
+
+    return createPortal(
+      <div className="modal-overlay">
+        <div className="modal-container">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h2 className="text-xl font-bold">Payment Information</h2>
+              <button
+                onClick={handleClosePaymentInfo}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                &times;
+              </button>
+            </div>
+            <div className="modal-body">
+              {/* Add payment details here */}
+              <button
+                onClick={handleGoToMessenger}
+                className="bg-indigo-600 text-white py-2 px-4 rounded-md mr-2 hover:bg-indigo-500"
+              >
+                Go to Messenger
+              </button>
+              <button
+                onClick={handleClosePaymentInfo}
+                className="bg-gray-200 text-gray-800 py-2 px-4 rounded-md hover:bg-gray-300"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>,
+      modalRoot
+    );
+  };
+
+  
+
   const getDocumentData = async () => {
     // ... (existing getDocumentData function)
   };
@@ -116,7 +167,7 @@ export default function Pricing({ id }) {
     }));
   };
 
-  return (
+   return (
     <div className="bg-white py-24 sm:py-32" id={id}>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
@@ -127,6 +178,10 @@ export default function Pricing({ id }) {
             နိုင်ငံတကာသုံး ငွေပေးချေမှုစနစ်
           </p>
         </div>
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
+          Visa, Master Card နှင့် ATM Card ရှိသူများသည့် တိုက်ရိုက်ပေးချေပြီး Credit
+          များကို ဝယ်ယူနိုင်ပါတယ်။ Kpay, Wave ဖြင့်ပေးချေလိုပါက အောက်ပါညွန်ကြားချက်အတိုင်းပေးချေနိုင်ပါတယ်။
+        </p>
         <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {tiers.map((tier, tierIdx) => (
             <div
@@ -230,38 +285,7 @@ export default function Pricing({ id }) {
           ))}
         </div>
       </div>
-      {showPaymentInfo && (
-        <div className="modal-overlay">
-          <div className="modal-container">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h2 className="text-xl font-bold">Payment Information</h2>
-                <button
-                  onClick={handleClosePaymentInfo}
-                  className="text-gray-500 hover:text-gray-700"
-                >
-                  &times;
-                </button>
-              </div>
-              <div className="modal-body">
-                {/* Add payment details here */}
-                <button
-                  onClick={handleGoToMessenger}
-                  className="bg-indigo-600 text-white py-2 px-4 rounded-md mr-2 hover:bg-indigo-500"
-                >
-                  Go to Messenger
-                </button>
-                <button
-                  onClick={handleClosePaymentInfo}
-                  className="bg-gray-200 text-gray-800 py-2 px-4 rounded-md hover:bg-gray-300"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      {renderModal()}
       <Toaster />
     </div>
   );
