@@ -106,11 +106,6 @@ export default function Pricing({ id }) {
     setShowPopup(false);
   };
 
-    const handleGoToMessenger = () => {
-    // Add logic to redirect to Facebook Messenger page
-    // Example: window.location.href = "https://www.messenger.com/";
-  };
-
 
 
     setLoading((prevState) => ({
