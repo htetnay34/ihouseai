@@ -234,10 +234,30 @@ return (
       {showPaymentInfo && (
         <div className="modal-container">
           <div className="modal-content">
-            <h2>Payment Information</h2>
-            {/* Add payment details here */}
-            <button onClick={handleGoToMessenger}>Go to Messenger</button>
-            <button onClick={handleClosePaymentInfo}>Close</button>
+            <div className="modal-header">
+              <h2 className="text-xl font-bold">Payment Information</h2>
+              <button
+                onClick={handleClosePaymentInfo}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                &times;
+              </button>
+            </div>
+            <div className="modal-body">
+              Kpay No - 09974902335, Name - Yan Naing Soe
+              <button
+                onClick={handleGoToMessenger}
+                className="bg-indigo-600 text-white py-2 px-4 rounded-md mr-2 hover:bg-indigo-500"
+              >
+                Go to Messenger
+              </button>
+              <button
+                onClick={handleClosePaymentInfo}
+                className="bg-gray-200 text-gray-800 py-2 px-4 rounded-md hover:bg-gray-300"
+              >
+                Close
+              </button>
+            </div>
           </div>
         </div>
       )}
