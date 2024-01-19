@@ -11,11 +11,10 @@ import { Container } from "../Container";
 
 const features = [
   {
-    name: "Inscription",
-    summary: "Créez votre compte en quelques clics",
+    name: "အကောင့်ဖွင့်ပါ",
+    summary: "လွယ်လွယ်ကူကူနဲ့ အကောင့်ဖွင့်နိုင်ပါတယ်",
     description:
-      "Inscrivez-vous avec votre compte google ou directement avec le formulaire d'inscription et accédez à votre tableau de bord.",
-    image: screenshotContacts,
+      "သင့်ရဲ့ gmail လိပ်စာကိုထည့်ပြီး password သတ်မှတ်ပြီး သင့်ရဲ့ ကိုယ်ပိုင် Dashboard ကိုဝင်ရောက်နိုင်ပါတယ်,
     icon: function ContactsIcon() {
       return (
         <>
@@ -33,10 +32,10 @@ const features = [
     },
   },
   {
-    name: "Tableau de bord",
-    summary: "Accédez à votre tableau de bord",
+    name: "Dashboard",
+    summary: "Dashboard လို့ခေါ်သည့် ပုံတွေထုတ်နိုင်မည့်နေရာတစ်ခု",
     description:
-      "Accédez à votre tableau de bord et commencez à créer vos générations d'intérieur avec notre outil convivial et puissant.",
+      "သင့်ရဲ့ ကိုယ်ပိုင် Dashboard ကိုဝင်ရောက်ပါ။ ကျွန်တော်တို့ရဲ့ အစွမ်းထက်သည့် AI နည်းပညာများကိုအသုံးပြုပြီး ရိုက်ထားသည့် အခန်းပုံကို ပြပြီး Interior အတွင်းဒီဇိုင်းပုံတွေကိုထုတ်ခိုင်းနိုင်ပါတယ်။",
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId();
@@ -217,16 +216,15 @@ export function SecondaryFeatures({ id }) {
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-base font-semibold leading-7 text-indigo-600">
               {" "}
-              Fonctionnement{" "}
+              အသုံးဝင်မှုများ{" "}
             </h2>
             <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-              Des générations d'intérieurs en un clic
+              ကလစ်တစ်ချက်နိုပ်ရုံနဲ့ အရမ်းမိုက်သည့် အခန်းဒီဇိုင်းတွေထုတ်ပေးနိုင်ပါတယ်
             </p>
           </div>
           <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-            Explorez de nouvelles perspectives dans la décoration intérieure en
-            expérimentant différents agencements, styles et concepts sans même
-            avoir à déplacer un meuble.
+            အတွင်းပိုင်းဒီဇိုင်းတွင် ရှုထောင့်အသစ်များကို AI နဲ့အတူ စူးစမ်းလေ့လာပါ။
+             မတူညီသော အပြင်အဆင်များ၊ စတိုင်များနှင့် အယူအဆများကို AI ကို စမ်းသပ်ထုတ်ကြည့်ခိုင်းပါ။
           </p>
         </div>
         <FeaturesMobile />
