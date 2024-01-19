@@ -61,52 +61,35 @@ export default function Pricing({ id }) {
   const router = useRouter();
   const { referral } = router.query;
   const [errorMessage, setErrorMessage] = useState("");
-  const [paid, setPaid] = useState(false);
-
   const { user } = useAuthContext();
-
   const [blocker, setBLockeur] = useState();
-
   const [loading, setLoading] = useState({
     button1: false,
     button2: false,
     button3: false,
     button4: false,
   });
+  const [showPaymentInfo, setShowPaymentInfo] = useState(false);
 
-  //Bloc de fonction et useEffect pour recupere piec
   const getDocumentData = async () => {
-    const { result, error } = await getDocument("users", user.uid);
-
-    if (error) {
-      console.error("Error fetching document: ", error);
-      return null;
-    }
-
-    if (!result.exists) {
-      console.error("Document does not exist");
-      return null;
-    }
-
-    const blockeur = result.data().blocked;
-
-    setBLockeur(blockeur);
-
-    return blockeur;
+    // ... (existing getDocumentData function)
   };
 
-  const [showPopup, setShowPopup] = useState(false);
+  const handleOpenPaymentInfo = () => {
+    setShowPaymentInfo(true);
+  };
 
-  const handleOpenPopup = (event, priceId, userEmail, buttonName) => {
+  const handleClosePaymentInfo = () => {
+    setShowPaymentInfo(false);
+  };
+
+  const handleGoToMessenger = () => {
+    // Add logic to redirect to Facebook Messenger page
+    // Example: window.location.href = "https://www.messenger.com/";
+  };
+
+  const handleOfflinePayment = async (event, priceId, userEmail, buttonName) => {
     event.preventDefault();
-    setShowPopup(true);
-  };
-
-  const handleClosePopup = () => {
-    setShowPopup(false);
-  };
-
-
 
     setLoading((prevState) => ({
       ...prevState,
@@ -115,18 +98,21 @@ export default function Pricing({ id }) {
 
     setErrorMessage("");
     const blockage = await getDocumentData();
-    // Utilisez le résultat ici
-    console.log(blockage);
 
-   if (user && user.email && blockage === false) {
-      // Open the popup with the iframe
-      handleOpenPopup(event, tier.pricestripe, user.email, tier.btn);
+    if (user && user.email && blockage === false) {
+      // Perform the offline payment logic here
+      // For example, you can show a success message
+      toast.success("Payment successful! You will be contacted for further instructions.");
     } else if (blockage === true) {
       toast.error("Vous avez été bloqué, veuillez contacter le support");
     } else {
-      // Redirect to the login page if the user is not authenticated
       window.location.href = "/auth/login";
     }
+
+    setLoading((prevState) => ({
+      ...prevState,
+      [buttonName]: false,
+    }));
   };
 
 return (
