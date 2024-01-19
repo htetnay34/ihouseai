@@ -20,10 +20,10 @@ const tiers = [
     href: "/auth/login",
     pricestripe: "price_1NMJepHlXD1yqYgk2wFb9iHn",
     credits: "30",
-    priceMonthly: "9€ ",
+    priceMonthly: "၂၀၀၀၀ ကျပ် ",
     btn: "button1",
     description:
-      "30 générations d'intérieurs avec tous les thèmes disponibles.",
+      "ပုံ ၅၀ ထုတ်နိုင်ပါတယ်",
     features: [],
     mostPopular: false,
   },
@@ -33,10 +33,10 @@ const tiers = [
     href: "/auth/login",
     pricestripe: "price_1NMJdRHlXD1yqYgklSHLQ6GW",
     credits: "100",
-    priceMonthly: "19€ ",
+    priceMonthly: "၅၀၀၀၀ ကျပ် ",
     btn: "button2",
     description:
-      "100 générations d'intérieurs avec tous les thèmes disponibles.",
+      "ပုံ ၂၀၀ ထုတ်နိုင်ပါတယ်.",
     features: [],
     mostPopular: true,
   },
@@ -47,9 +47,9 @@ const tiers = [
     credits: "250",
     href: "/auth/login",
     btn: "button3",
-    priceMonthly: "39€ ",
+    priceMonthly: "၁၀၀၀၀ ကျပ် ",
     description:
-      "250 générations d'intérieurs avec tous les thèmes disponibles.",
+      "ပုံ ၅၀၀ ထုတ်နိုင်ပါတယ်",
     features: [],
     mostPopular: false,
   },
@@ -149,15 +149,14 @@ export default function Pricing({ id }) {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">
-            Tarification
+            ငွေပေးချေမှု
           </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Choisissez le plan qui vous convient le mieux
+           နိုင်ငံတကာသုံး ငွေပေးချေမှုစနစ်
           </p>
         </div>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-          Nous proposons des plans adaptés à vos besoins du particulier au
-          professionnel.
+          Visa, Master Card နှင့် ATM Card ရှိသူများသည့် တိုက်ရိုက်ပေးချေပြီး Credit များကို ဝယ်ယူနိုင်ပါတယ်
         </p>
         <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {tiers.map((tier, tierIdx) => (
