@@ -85,7 +85,7 @@ const [showPaymentInfo, setShowPaymentInfo] = useState(false);
   };
 
 const handleGoToMessenger = () => {
-  window.location.href = "https://m.m/infinitytechmyanmar";
+  window.location.href = "https://m.me/infinitytechmyanmar";
   // Alternatively, you can use other methods like window.open() or router.push() (for Next.js)
   // to navigate the user to the desired URL.
 };
