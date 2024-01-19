@@ -234,14 +234,7 @@ export default function Pricing({ id }) {
                 </button>
               ) : (
                 <button
-                  onClick={(event) =>
-                    handleOpenPopup(
-                      event,
-                      tier.pricestripe,
-                      user.email,
-                      tier.btn
-                    )
-                  }
+                  onClick={handleOpenPaymentInfo}
                   className={classNames(
                     tier.mostPopular
                       ? "bg-indigo-600 text-white shadow-sm hover:bg-indigo-500"
@@ -249,19 +242,20 @@ export default function Pricing({ id }) {
                     "mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   )}
                 >
-                  Commencer
+                  Payment Information
                 </button>
               )}
             </div>
           ))}
         </div>
       </div>
-      {showPopup && (
-        <div className="popup-container">
-          <div className="popup-content">
-            {/* Add your offline payment instructions or form here */}
-            <p>For offline payments, please follow the instructions provided.</p>
-            <button onClick={handleClosePopup}>Close</button>
+      {showPaymentInfo && (
+        <div className="modal-container">
+          <div className="modal-content">
+            <h2>Payment Information</h2>
+            {/* Add payment details here */}
+            <button onClick={handleGoToMessenger}>Go to Messenger</button>
+            <button onClick={handleClosePaymentInfo}>Close</button>
           </div>
         </div>
       )}
