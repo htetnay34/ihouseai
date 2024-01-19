@@ -14,7 +14,8 @@ const features = [
     name: "အကောင့်ဖွင့်ပါ",
     summary: "လွယ်လွယ်ကူကူနဲ့ အကောင့်ဖွင့်နိုင်ပါတယ်",
     description:
-      "သင့်ရဲ့ gmail လိပ်စာကိုထည့်ပြီး password သတ်မှတ်ပြီး သင့်ရဲ့ ကိုယ်ပိုင် Dashboard ကိုဝင်ရောက်နိုင်ပါတယ်,
+      "သင့်ရဲ့ gmail လိပ်စာကိုထည့်ပြီး password သတ်မှတ်ပြီး သင့်ရဲ့ ကိုယ်ပိုင် Dashboard ကိုဝင်ရောက်နိုင်ပါတယ်",
+    image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
         <>
