@@ -111,11 +111,7 @@ export default function Pricing({ id }) {
     // Example: window.location.href = "https://www.messenger.com/";
   };
 
-  const handleOfflinePayment = async (event, priceId, userEmail, buttonName) => {
-    event.preventDefault();
 
-  const handleCheckout = async (event, priceId, userEmail, buttonName) => {
-    event.preventDefault();
 
     setLoading((prevState) => ({
       ...prevState,
