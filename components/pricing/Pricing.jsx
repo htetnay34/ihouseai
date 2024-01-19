@@ -82,43 +82,52 @@ export default function Pricing({ id }) {
     };
   }, []);
 
-  const renderModal = () => {
-    if (!modalRoot || !showPaymentInfo) return null;
+ const renderModal = () => {
+  if (!showPaymentInfo) return null;
 
-    return createPortal(
-      <div className="modal-overlay">
-        <div className="modal-container">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h2 className="text-xl font-bold">Payment Information</h2>
-              <button
-                onClick={handleClosePaymentInfo}
-                className="text-gray-500 hover:text-gray-700"
-              >
-                &times;
-              </button>
-            </div>
-            <div className="modal-body">
-              {/* Add payment details here */}
-              <button
-                onClick={handleGoToMessenger}
-                className="bg-indigo-600 text-white py-2 px-4 rounded-md mr-2 hover:bg-indigo-500"
-              >
-                Go to Messenger
-              </button>
-              <button
-                onClick={handleClosePaymentInfo}
-                className="bg-gray-200 text-gray-800 py-2 px-4 rounded-md hover:bg-gray-300"
-              >
-                Close
-              </button>
-            </div>
+  return (
+    <div className="modal-overlay">
+      <div className="modal-container">
+        <div className="modal-content">
+          <div className="modal-header">
+            <h2 className="text-xl font-bold">Payment Information</h2>
+            <button
+              onClick={handleClosePaymentInfo}
+              className="text-gray-500 hover:text-gray-700"
+            >
+              &times;
+            </button>
+          </div>
+          <div className="modal-body">
+            {/* Add payment details here */}
+            <button
+              onClick={handleGoToMessenger}
+              className="bg-indigo-600 text-white py-2 px-4 rounded-md mr-2 hover:bg-indigo-500"
+            >
+              Go to Messenger
+            </button>
+            <button
+              onClick={handleClosePaymentInfo}
+              className="bg-gray-200 text-gray-800 py-2 px-4 rounded-md hover:bg-gray-300"
+            >
+              Close
+            </button>
           </div>
         </div>
-      </div>,
-      modalRoot
-    );
-  };
+      </div>
+    </div>
+  );
+};
+
+// ...
+
+return (
+  <div className="bg-white py-24 sm:py-32" id={id}>
+    {/* ... (Previous code) */}
+    {showPaymentInfo && renderModal()}
+    <Toaster />
+  </div>
+);
 
   
 
