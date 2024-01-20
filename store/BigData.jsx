@@ -1,22 +1,22 @@
 export const dataListe1 = [
-  { id: 0, name: "Moderne", translated: "Modern" },
-  { id: 1, name: "Minimaliste", translated: "Minimalist" },
-  { id: 2, name: "Professionnel", translated: "Professional" },
-  { id: 3, name: "Tropical", translated: "Tropical" },
-  { id: 4, name: "Vintage", translated: "Vintage" },
-  { id: 5, name: "Industriel", translated: "Industrial" },
-  { id: 6, name: "Néoclassique", translated: "Neoclassic" },
+  { id: 0, name: "မော်ဒန်", translated: "Modern" },
+  { id: 1, name: "ရှိးရှင်းသော", translated: "Minimalist" },
+  { id: 2, name: "ပရော်ဖက်ရှင်နယ်", translated: "Professional" },
+  { id: 3, name: "နွေဦးစတိုင်", translated: "Tropical" },
+  { id: 4, name: "ခေတ်ဟောင်း", translated: "Vintage" },
+  { id: 5, name: "စက်မှုစတိုင်", translated: "Industrial" },
+  { id: 6, name: "နီယိုဂန္တဝင်", translated: "Neoclassic" },
 ];
 
 export const dataListe2 = [
-  { id: 0, name: "Chambre", translated: "Bedroom" },
-  { id: 1, name: "Salle à manger", translated: "Dining Room" },
-  { id: 2, name: "Salon", translated: "Living Room" },
-  { id: 3, name: "Salle de bain", translated: "Bathroom" },
-  { id: 4, name: "Cuisine", translated: "Kitchen" },
-  { id: 5, name: "Sous-sol", translated: "Basement" },
-  { id: 6, name: "Terrasse extérieure", translated: "Outdoor Patio" },
-  { id: 7, name: "Salle de jeu", translated: "Gaming Room" },
+  { id: 0, name: "အိပ်ခန်း", translated: "Bedroom" },
+  { id: 1, name: "ထမင်းစားခန်း", translated: "Dining Room" },
+  { id: 2, name: "ဧည့်ခန်း", translated: "Living Room" },
+  { id: 3, name: "ရေချိုးခန်း", translated: "Bathroom" },
+  { id: 4, name: "မီးဖိုချောင်", translated: "Kitchen" },
+  { id: 5, name: "မြေအောက်ခန်း", translated: "Basement" },
+  { id: 6, name: "ပြင်ပဝရံတာ", translated: "Outdoor Patio" },
+  { id: 7, name: "ဂိမ်းကစားခန်း", translated: "Gaming Room" },
 ];
 
 export const dataListe3 = [
