@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <Head>
         <title>iHouse - AI Interior ဒီဇိုင်းနည်းပညာ</title>
-        <link rel="canonical" href="https://infinityai.online/ihouseai" />
+        <link rel="canonical" href="https://ihouseai.vercel.app/dashboard" />
       </Head>
       <Navbar />
       <HeroSections />
