@@ -107,10 +107,10 @@ export default function DownloadButtonHistorique({ listselected }) {
           {/* Texte du bouton */}
           <div className="button-copy pl-2 ">
             {isDownloading
-              ? "En cours de téléchargement ..."
+              ? "လက်ရှိဒေါင်းလုဒ်လုပ်နေပါသည် ..."
               : isDownloaded
-              ? "Succès"
-              : "Télécharger"}
+              ? "အောင်မြင်"
+              : "Download ယူမယ်"}
           </div>
         </div>
       </button>
