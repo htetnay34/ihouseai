@@ -378,7 +378,7 @@ export default function Dashboard() {
 
     {
       id: 5,
-      name: "Sous-sol",
+      name: "မြေအောက်ခန်း",
       translated: "Basement",
       href: "#",
       initial: "Ss",
