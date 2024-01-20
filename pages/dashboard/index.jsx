@@ -19,8 +19,8 @@ export default function Home() {
 
   return <>
       <Head>
-        <title>StudioIA - Tableau de bord</title>
-        <link rel="canonical" href="https://www.studioia-interieur.fr/dashboard" />
+        <title>iHouseAI - Interior Design</title>
+        <link rel="canonical" href="https://ihouseai.vercel.app/dashboard" />
 
       </Head>
   {user && <DashboardUi />}
