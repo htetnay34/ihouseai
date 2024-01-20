@@ -625,7 +625,7 @@ export default function Dashboard() {
         }
       }
     } else {
-      toast.error("Vous n'avez plus de crédits");
+      toast.error("သင့်တွင် Credit များ မရှိတော့ပါ");
     }
   };
 
