@@ -1129,10 +1129,10 @@ export default function Dashboard() {
                   {/* Texte du bouton */}
                   <div className="button-copy pl-2 ">
                     {isDownloading
-                      ? " En cours de traitement"
+                      ? " စီမံဆောင်ရွက်နေပါသည်"
                       : isDownloaded
-                      ? "Succès"
-                      : "Lancer le rendu"}
+                      ? "အောင်မြင်"
+                      : "ဟတ်ချလောင်း"}
                   </div>
                 </div>
               </button>
