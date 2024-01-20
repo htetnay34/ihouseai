@@ -67,10 +67,10 @@ const features = [
     },
   },
   {
-    name: "Créditer votre compte",
-    summary: "Créditez votre compte",
+    name: "Credit စနစ်",
+    summary: "လိုအပ်သလောက် Credit များဝယ်ယူနိုင်",
     description:
-      "Créditez votre compte avec le montant de votre choix et profitez de nos services. 5 crédits vous sont offerts à l'inscription.",
+      "AI အခန်းဒီဇိုင်းပုံတွေ ထုတ်နိုင်ဖို့ လိုအပ်သည့် Credit များကို ဝယ်ယူနိုင်ပါတယ်",
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
