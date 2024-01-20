@@ -21,13 +21,13 @@ const faqs = [
   },
   {
   id: 5,
-  question: "Quelles mesures de sécurité sont mises en place pour les données utilisateurs et les images déposées ?",
-  answer: "Chez StudioIA-Interieur, nous utilisons le service Firebase de Google pour stocker les données utilisateurs et les images déposées. Firebase est réputé pour sa fiabilité et sa sécurité.",
+  question: "ထုတ်ချင်သည့် အခန်းဒီဇိုင်းပုံကို စိတ်ကြိုက် Prompt ရေးပြီး ထုတ်ခိုင်းလို့ရပါသလား ?",
+  answer: "ရပါတယ်။ စိတ်ကြိုက် prompt ရေးပြီး ထုတ်ချင်သည့် အခန်းပုံစံ ဒီဇိုင်းကို ထုတ်ခိုင်းလို့ရပါတယ်",
   },
   {
   id: 6,
-  question: "Comment optimiser une requête personnalisée pour la génération d'une image ?",
-  answer: "Pour optimiser une demande personnalisée, utilisez des mots clés spécifiques et détaillés en anglais. Par exemple, au lieu de demander simplement 'Chambre moderne', spécifiez 'Chambre moderne avec une palette de couleurs neutres et des meubles en bois'. Cela nous aidera à mieux comprendre vos goûts et à créer un design qui correspond parfaitement à vos attentes.",
+  question: "ထုတ်ထားသည့် ပုံတွေကို ပြန်ကြည့်လို့ရပါသလား ?",
+  answer: "ကိုယ်ထုတ်ထားသည့် ပုံတွေကို History ကနေ ပြန်ကြည့်လို့ရပါတယ်",
   },
   // More questions...
   ];
@@ -42,11 +42,11 @@ export default function Faq({ id }) {
               FAQ
             </h2>
             <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-              Questions fréquentes
+              အမေးများသည့် မေးခွန်းများ
             </p>
           </div>
           <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-            Une question sur nos services de génération d'images d'interieurs ?
+            iHouse AI နဲ့ ပတ်သက်ပြီး မေးမြန်းထားတာလေးတွေကို ဖြေပေးထားပါတယ် ?
           </p>
         </div>
 
