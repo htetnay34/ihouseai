@@ -88,7 +88,7 @@ const UploadImage = ({ onImageChange, ImageBefored }) => {
                 onChange={(e) => handleImageChange(e.target.files[0])}
               />
             </label>
-            <p className="pl-1">ou glisser et déposer</p>
+            <p className="pl-1">(သို့)ဆွဲထည့်ပါ</p>
           </div>
           <p className="text-xs leading-5 text-gray-600">
             PNG, JPG, JPEG ဖိုင် size 5MB မကျော်ရ
