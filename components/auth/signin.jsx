@@ -133,7 +133,7 @@ export default function Sigin() {
       <div className="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Créer un compte
+            အကောင့်တစ်ခုဖန်တီးသည်
           </h2>
         </div>
 
@@ -170,7 +170,7 @@ export default function Sigin() {
                   htmlFor="password"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Mot de passe
+                  စကားဝှက်
                 </label>
                 <div className="mt-2">
                   <input
@@ -190,7 +190,7 @@ export default function Sigin() {
                   htmlFor="repeat-password"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Répéter le mot de passe
+                 စကားဝှက်အားပြန်ရိုက်ပါ
                 </label>
                 <div className="mt-2">
                   <input
@@ -218,7 +218,7 @@ export default function Sigin() {
                     htmlFor="remember-me"
                     className="ml-3 block text-sm leading-6 text-gray-900"
                   >
-                    Accepter les termes et conditions
+                    စည်းကမ်းသတ်မှတ်ချက်များကို လက်ခံပါ။
                   </label> */}
                 </div>
 
@@ -227,7 +227,7 @@ export default function Sigin() {
                     href="/auth/login"
                     className="font-semibold text-indigo-600 hover:text-indigo-500"
                   >
-                    Déjà inscrit ?
+                   စာရင်းသွင်းပြီးပြီလား?
                   </Link>
                 </div>
               </div>
@@ -237,7 +237,7 @@ export default function Sigin() {
                   type="submit"
                   className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Continuer
+                  ဆက်လက်
                 </button>
               </div>
             </form>
@@ -286,9 +286,7 @@ export default function Sigin() {
                         d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
                       />
                     </svg>
-                    <span className="text-sm font-semibold leading-6 text-gray-600">
-                      Connexion avec Google
-                    </span>
+                   
                 </button>
 
       
