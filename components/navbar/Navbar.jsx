@@ -8,10 +8,10 @@ import { useAuthContext } from "@/store/AuthNavContext";
 import Image from "next/image";
 
 const navigation = [
-  { name: "Comment utiliser StudioIA ?", href: "/#Fonctionnement" },
-  { name: "Tarification", href: "/#Tarification" },
+  { name: "iHouse AI အသုံးဝင်မှု ?", href: "/#Fonctionnement" },
+  { name: "Credit ဝယ်ယူနိုင်", href: "/#Tarification" },
   // { name: "Temoignages", href: "/#Temoignages" },
-  { name: "Faq", href: "/#Faq" },
+  { name: "အမေးအဖြေ", href: "/#Faq" },
 ];
 
 export default function Navbar() {
