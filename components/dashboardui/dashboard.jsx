@@ -396,7 +396,7 @@ export default function Dashboard() {
     },
     {
       id: 7,
-      name: "Salle de jeu",
+      name: "Gaming Room",
       translated: "Gaming Room",
       href: "#",
       initial: "Sj",
