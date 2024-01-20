@@ -507,7 +507,7 @@ export default function Dashboard() {
       setIsDownloaded(false);
       setIsDownloading(true);
     } else {
-      toast.error("Veuillez déposer une image");
+      toast.error("ကျေးဇူးပြု၍ ပုံတစ်ပုံကို အပ်လုဒ်လုပ်ပါ။");
     }
 
     handleNavigation();
@@ -575,7 +575,7 @@ export default function Dashboard() {
 
                 // Si la prédiction est réussie, depose l'image de l'ouput dans le storage firebase adequat selon l'user
                 if (prediction.status == "succeeded") {
-                  toast.success("Votre image est prête");
+                  toast.success("သင့်ပုံ အဆင်သင့်ဖြစ်ပါပြီ။");
                   setIsDownloading(false);
                   setIsDownloaded(true);
                   setUploadStatus("uploading");
@@ -726,7 +726,7 @@ export default function Dashboard() {
                         </li>
                         <li>
                           <div className="text-xs font-semibold leading-6 text-gray-400">
-                            Exemple
+                            Example
                           </div>
                           <ul role="list" className="-mx-2 mt-2 space-y-1">
                             {teams.map((team) => (
