@@ -161,21 +161,21 @@ export default function Dashboard() {
 
   const navigation = [
     {
-      name: "Accueil",
+      name: "မှုလစာမျက်မှာ",
       href: "#",
       icon: HomeIcon,
       current: false,
       onClick: handleBLog,
     },
     {
-      name: "Tableau de bord",
+      name: "Dashboard အခန်း",
       href: "#",
       icon: UsersIcon,
       current: currentAccueil,
       onClick: handleNavigation,
     },
     {
-      name: "Historique",
+      name: "Histoy မှတ်တမ်း",
       href: "#",
       icon: FolderIcon,
       current: currentHistorique,
