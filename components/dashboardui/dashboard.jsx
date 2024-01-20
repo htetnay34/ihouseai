@@ -161,7 +161,7 @@ export default function Dashboard() {
 
   const navigation = [
     {
-      name: "မှုလစာမျက်မှာ",
+      name: "မှုလစာမျက်နှာ",
       href: "#",
       icon: HomeIcon,
       current: false,
