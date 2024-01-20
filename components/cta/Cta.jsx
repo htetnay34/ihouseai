@@ -8,13 +8,13 @@ export default function Cta() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
           <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Explorez de nouveaux horizons
+            iHouse AI အကြောင်း
               </h2>
             <p className="mt-6 text-xl leading-8 text-gray-600 ">
-            Commencez dès maintenant votre transformation d'intérieur et créez des générations d'intérieurs exceptionnelles !
+            iHouse AI သည် ပြည်တွင်း ဗိသုကာပညာရှင်များ နှင့် AI ပညာရှင်များ ပူးပေါင်း ဖန်တီးတည်ဆောက်ထားသည့် Interior Design AI platform တစ်ခုဖြစ်ပါတယ်။ 
             </p>
             <p className="mt-6 text-base leading-7 text-gray-600 text-justify">
-            Ne laissez pas vos idées rester seulement sur papier ou dans votre imagination. Utilisez notre solution de génération d'images basée sur le machine learning pour concrétiser vos concepts et visualiser votre projet avant même de commencer les travaux. Simplifiez le processus de conception d'intérieur et faites preuve d'audace dans vos choix grâce à notre technologie révolutionnaire.
+            မိမိတို့ ပြင်ချင်သည့် အခန်းတွေကို ဒီဇိုင်းပုံစံ အမျိုးမျိုးနဲ့ ထုတ်ကြည့်ခိုင်းနိုင်ပါတယ်။ AI နည်းပညာကို အခုမှစသုံးမည့်သူများပင် အသုံးပြုရလွယ်ကူအောင် တည်ဆောက်ပေးထားပါတယ်။ အပြင်မှာရှိသည့် အခန်းကို ဓာတ်ပုံရိုက်ယူပြီး AI ကို အခန်းပုံစံပြကာ လက်ရှိအခန်းနှင့် တူညီသည့် မိမိလိုချင်သည့် အခန်းဒီဇိုင်း ပုံစံအမျိုးမျိုးကို စက္ကန့်ပိုင်းအတွင်းမှာ ထုတ်ပေးနိုင်စွမ်းရှိပါတယ်။ .
             </p>
             <div className="mt-10 flex">
               <Link
