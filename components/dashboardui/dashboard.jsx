@@ -161,21 +161,21 @@ export default function Dashboard() {
 
   const navigation = [
     {
-      name: "မှုလစာမျက်နှာ",
+      name: "Accueil",
       href: "#",
       icon: HomeIcon,
       current: false,
       onClick: handleBLog,
     },
     {
-      name: "Dashboard အခန်း",
+      name: "Tableau de bord",
       href: "#",
       icon: UsersIcon,
       current: currentAccueil,
       onClick: handleNavigation,
     },
     {
-      name: "History မှတ်တမ်း",
+      name: "Historique",
       href: "#",
       icon: FolderIcon,
       current: currentHistorique,
@@ -329,7 +329,81 @@ export default function Dashboard() {
     setSalleDeJeu(true);
   }
 
+  const teams = [
+    {
+      id: 0,
+      name: "Salon",
+      translated: "Living Room",
+      href: "#",
+      initial: "Sa",
+      current: SalonExemple,
+      onClick: handleSalon,
+    },
+    {
+      id: 1,
+      name: "Salle à manger",
+      translated: "Dining Room",
+      href: "#",
+      initial: "Sm",
+      current: SalleMiamExemple,
+      onClick: handleSalleMiam,
+    },
+    {
+      id: 2,
+      name: "Chambre",
+      translated: "Bedroom",
+      href: "#",
+      initial: "Ch",
+      current: ChambreExemple,
+      onClick: handleChambre,
+    },
+    {
+      id: 3,
+      name: "Salle de bain",
+      translated: "Bathroom",
+      href: "#",
+      initial: "Sb",
+      current: DoucheExemple,
+      onClick: handleDouche,
+    },
+    {
+      id: 4,
+      name: "Cuisine",
+      translated: "Kitchen",
+      href: "#",
+      initial: "Cu",
+      current: CuisineExemple,
+      onClick: handleCuisine,
+    },
 
+    {
+      id: 5,
+      name: "Sous-sol",
+      translated: "Basement",
+      href: "#",
+      initial: "Ss",
+      current: SousSol,
+      onClick: handleSousol,
+    },
+    {
+      id: 6,
+      name: "Terrasse extérieure",
+      translated: "Outdoor Patio",
+      href: "#",
+      initial: "Te",
+      current: TerrasseExterieure,
+      onClick: handleTerraseExteieur,
+    },
+    {
+      id: 7,
+      name: "Salle de jeu",
+      translated: "Gaming Room",
+      href: "#",
+      initial: "Sj",
+      current: SalleDeJeu,
+      onClick: handleSalleDeJeu,
+    },
+  ];
 
   //Function pour actualise les dropdowns states
   const handleSelect1 = (value) => {
@@ -470,7 +544,7 @@ export default function Dashboard() {
                   a_prompt:
                     "best quality, photo from Pinterest, interior, cinematic photo, ultra-detailed, extremely detailed, ultra-realistic, award-winning, interior design, natural lighting",
                   n_prompt:
-                    "incorrect hands, extra limbs, extra fingers, fused fingers, missing facial features, low quality, bad quality, bad anatomy, Missing limbs, missing fingers, scary, uglyFinetuned ModelDreamShaper 3.2,two heads, two face, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, ugly, blurry, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, out of frame, ugly, extra limbs, bad anatomy, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, mutated hands, fused fingers, too many fingers, long neck, poorly drawn eyes, double heads, double faces, two heads, two faces",
+                    "longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
                 }),
               });
 
