@@ -15,7 +15,7 @@ export default function ImageComparaison({ imageBefore, imageAfter }) {
             <div className="w-auto h-auto flex flex-col items-center justify-center absolute top-[40%] transform transition-y-[0%] ">
               <div className="loadering">
                 <span className="inline-flex items-center gap-x-0.5 rounded-md  px-2 py-1 text-2xl font-semibold text-gray-900">
-                  CHARGEMENT EN COURS <span class="bullets">.</span>
+                  ခဏစောင့်ပါ <span class="bullets">.</span>
                 </span>
               </div>
               <Loading />
@@ -31,7 +31,7 @@ export default function ImageComparaison({ imageBefore, imageAfter }) {
                 />
                 <span className="absolute top-2 left-2">
                   <span className="inline-flex items-center gap-x-0.5 rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
-                    Avant
+                    မပြင်ခင်
                   </span>
                 </span>
               </div>
@@ -43,7 +43,7 @@ export default function ImageComparaison({ imageBefore, imageAfter }) {
                 />
                 <span className="absolute top-2 right-2">
                   <span className="inline-flex items-center gap-x-0.5 rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
-                    Après
+                    ပြင်ပြီး
                   </span>
                 </span>
               </div>
@@ -63,7 +63,7 @@ export default function ImageComparaison({ imageBefore, imageAfter }) {
             />
             <span className="absolute top-2 left-2">
               <span className="inline-flex items-center gap-x-0.5 rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
-                Avant
+                မပြင်ခင်
               </span>
             </span>
           </div>
@@ -77,7 +77,7 @@ export default function ImageComparaison({ imageBefore, imageAfter }) {
             />
             <span className="absolute top-2 right-2">
               <span className="inline-flex items-center gap-x-0.5 rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
-                Après
+                ပြင်ပြီး
               </span>
             </span>
           </div>
