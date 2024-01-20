@@ -30,7 +30,7 @@ export default function Navbar() {
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">StudioIA - Interieur</span>
+            <span className="sr-only">iHouseAI - Interior</span>
             <Image
               className="h-12 w-auto "
               src={Logo}
