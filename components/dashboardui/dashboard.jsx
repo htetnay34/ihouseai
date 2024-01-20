@@ -544,7 +544,7 @@ export default function Dashboard() {
                   a_prompt:
                     "best quality, photo from Pinterest, interior, cinematic photo, ultra-detailed, extremely detailed, ultra-realistic, award-winning, interior design, natural lighting",
                   n_prompt:
-                    "longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+                    "incorrect hands, extra limbs, extra fingers, fused fingers, missing facial features, low quality, bad quality, bad anatomy, Missing limbs, missing fingers, scary, uglyFinetuned ModelDreamShaper 3.2,two heads, two face, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, ugly, blurry, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, out of frame, ugly, extra limbs, bad anatomy, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, mutated hands, fused fingers, too many fingers, long neck, poorly drawn eyes, double heads, double faces, two heads, two faces",
                 }),
               });
 
@@ -843,7 +843,7 @@ export default function Dashboard() {
                         className="ml-4 text-sm font-semibold leading-6 text-gray-900"
                         aria-hidden="true"
                       >
-                        Connecté
+                        ဝင်ထားပါတယ်
                       </span>
                       <ChevronDownIcon
                         className="ml-2 h-5 w-5 text-gray-400"
@@ -871,7 +871,7 @@ export default function Dashboard() {
                               "block px-3 py-1 text-sm leading-6 text-gray-900 w-full flex items-start hover:bg-gray-100"
                             )}
                           >
-                            Deconnexion
+                            ထွက်မယ်
                           </button>
 
                           <Link
@@ -967,7 +967,7 @@ export default function Dashboard() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
           <div className="flex-1 text-sm font-semibold leading-6 text-gray-900">
-            Tableau de bord
+            Dashboard အခန်း
           </div>
           <a href="#">
             <span className="sr-only">Votre profil</span>
@@ -986,7 +986,7 @@ export default function Dashboard() {
           >
             <div className="flex flex-col gap-8 px-4 overflow-x-hidden overflow-y-auto pt-4 h-full">
               <h2 className="md:text-xl font-bold subpixel-antialiased">
-                VOTRE INTERIEUR
+                အခန်းပုံ upload လုပ်ပါ
               </h2>
 
               <UploadImage
@@ -996,7 +996,7 @@ export default function Dashboard() {
 
               <div className="Selecteur w-full">
                 <h3 className="block font-semibold leading-6 text-gray-900">
-                  Type de pièce
+                  အခန်းအမျိုးအစားများ
                 </h3>
                 <Selecteur
                   people={dataListe2}
@@ -1007,7 +1007,7 @@ export default function Dashboard() {
 
               <div className="Selecteur w-full">
                 <h3 className="block font-semibold leading-6 text-gray-900">
-                  Style
+                  အခန်း စတိုင်လ်
                 </h3>
                 <Selecteur
                   people={dataListe1}
@@ -1023,7 +1023,7 @@ export default function Dashboard() {
                       htmlFor="comment"
                       className="block font-semibold leading-6 text-gray-900"
                     >
-                      Personnaliser votre requête
+                      သင့်စိတ်ကြိုက် Prompt ရေးမယ်
                     </label>
                     <div className="ml-auto flex items-center">
                       <label
