@@ -55,13 +55,13 @@ export default function Navbar() {
               onClick={handleSignOut}
               className="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-black"
             >
-              Deconnexion
+              ထွက်မယ်
             </button>
             <a
               href="/dashboard"
               className="z-100 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Tableau de bord
+              Dashboard အခန်း
             </a>
           </div>
         ) : (
@@ -70,14 +70,14 @@ export default function Navbar() {
               href="/auth/sigin"
               className="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-black"
             >
-              Inscription
+              အကောင့်ဖွင့်မယ်
             </Link>
 
             <Link
               href="/auth/login"
               className=" rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Connexion
+              ဝင်မယ်
             </Link>
           </div>
         )}
