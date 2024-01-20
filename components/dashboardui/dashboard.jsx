@@ -332,7 +332,7 @@ export default function Dashboard() {
   const teams = [
     {
       id: 0,
-      name: "Salon",
+      name: "ဧည့်ခန်း",
       translated: "Living Room",
       href: "#",
       initial: "Sa",
@@ -341,7 +341,7 @@ export default function Dashboard() {
     },
     {
       id: 1,
-      name: "Salle à manger",
+      name: "ထမင်းစားခန်း",
       translated: "Dining Room",
       href: "#",
       initial: "Sm",
@@ -350,7 +350,7 @@ export default function Dashboard() {
     },
     {
       id: 2,
-      name: "Chambre",
+      name: "အိမ်ခန်း",
       translated: "Bedroom",
       href: "#",
       initial: "Ch",
@@ -359,7 +359,7 @@ export default function Dashboard() {
     },
     {
       id: 3,
-      name: "Salle de bain",
+      name: "ရေချိုးခန်း",
       translated: "Bathroom",
       href: "#",
       initial: "Sb",
@@ -368,7 +368,7 @@ export default function Dashboard() {
     },
     {
       id: 4,
-      name: "Cuisine",
+      name: "မီးဖိုချောင်",
       translated: "Kitchen",
       href: "#",
       initial: "Cu",
@@ -387,7 +387,7 @@ export default function Dashboard() {
     },
     {
       id: 6,
-      name: "Terrasse extérieure",
+      name: "အပြင်ဝရန်တာ",
       translated: "Outdoor Patio",
       href: "#",
       initial: "Te",
@@ -396,7 +396,7 @@ export default function Dashboard() {
     },
     {
       id: 7,
-      name: "Gaming Room",
+      name: "ဂိမ်းကစားခန်း",
       translated: "Gaming Room",
       href: "#",
       initial: "Sj",
