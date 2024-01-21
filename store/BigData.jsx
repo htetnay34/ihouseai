@@ -6,6 +6,14 @@ export const dataListe1 = [
   { id: 4, name: "ခေတ်ဟောင်း", translated: "Vintage" },
   { id: 5, name: "စက်မှုစတိုင်", translated: "Industrial" },
   { id: 6, name: "နီယိုဂန္တဝင်", translated: "Neoclassic" },
+  { id: 7, name: "Scandinavian", translated: "Scandinavian" },
+  { id: 8, name: "Japandi", translated: "Japandi" },
+  { id: 9, name: "Boho", translated: "Boho" },
+  { id: 10, name: "Mediterranean Style", translated: "Mediterranean Style" },
+  { id: 11, name: "Country House", translated: "Country House" },
+  { id: 12, name: "Bauhaus Style", translated: "Bauhaus Style" },
+  { id: 13, name: "Traditional", translated: "Traditional" },
+  { id: 14, name: "Cabin Style", translated: "Cabin" },
 ];
 
 export const dataListe2 = [
@@ -17,6 +25,11 @@ export const dataListe2 = [
   { id: 5, name: "မြေအောက်ခန်း", translated: "Basement" },
   { id: 6, name: "ပြင်ပဝရံတာ", translated: "Outdoor Patio" },
   { id: 7, name: "ဂိမ်းကစားခန်း", translated: "Gaming Room" },
+  { id: 8, name: "ရုံးခန်း", translated: "Office Room" },
+  { id: 9, name: "ဘုရားခန်း", translated: "Burmese Style Buddist Shrine Room" },
+  { id: 10, name: "စားသောက်ဆိုင်", translated: "Restaurant" },
+  { id: 11, name: "ကော်ဖီဆိုင်", translated: "Coffee Shop" },
+  { id: 12, name: "ဖက်ရှင်ဆိုင်ခန်း", translated: "Fashion Shop" },
 ];
 
 export const dataListe3 = [
