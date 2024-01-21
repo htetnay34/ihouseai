@@ -46,7 +46,7 @@ const tiers = [
     credits: "500",
     href: "/auth/login",
     btn: "button3",
-    priceMonthly: "၁၀၀၀၀ ကျပ် ",
+    priceMonthly: "၁၀၀၀၀ဝ ကျပ် ",
     description:
       "ပုံ ၅၀၀ ထုတ်နိုင်ပါတယ်",
     features: [],
