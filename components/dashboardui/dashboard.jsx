@@ -1132,7 +1132,7 @@ export default function Dashboard() {
                       ? " စီမံဆောင်ရွက်နေပါသည်"
                       : isDownloaded
                       ? "အောင်မြင်"
-                      : "ဟတ်ချလောင်း"}
+                      : "ပုံထုတ်မယ်"}
                   </div>
                 </div>
               </button>
