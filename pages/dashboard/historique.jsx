@@ -28,7 +28,7 @@ export default function HistoriqueDachat() {
   return (
     <>
       <Head>
-        <title>StudioIA - Historique de payment</title>
+        <title>iHouse AI - Interior</title>
         <link rel="canonical" href="https://www.studioia-interieur.fr/dashboard/historique" />
 
       </Head>
