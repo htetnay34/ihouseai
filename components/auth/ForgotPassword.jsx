@@ -12,20 +12,20 @@ export default function ForgotPassword() {
     const result = await sendResetEmail(email);
     if (result.success) {
       toast.success(
-        "Un e-mail de réinitialisation de mot de passe a été envoyé à votre adresse e-mail."
+        "စကားဝှက်ပြန်လည်သတ်မှတ်ခြင်းအီးမေးလ်ကို သင့်အီးမေးလ်လိပ်စာသို့ ပေးပို့လိုက်ပါပြီ။"
       );
 
       setMessage(
-        "Un e-mail de réinitialisation de mot de passe a été envoyé à votre adresse e-mail."
+        "စကားဝှက်ပြန်လည်သတ်မှတ်ခြင်းအီးမေးလ်ကို သင့်အီးမေးလ်လိပ်စာသို့ ပေးပို့လိုက်ပါပြီ။"
       );
       setError(null);
     } else {
       toast.error(
-        "Une erreur s'est produite. Veuillez vérifier votre adresse e-mail et réessayer."
+        "အမှားအယွင်းတစ်ခု ဖြစ်ပွားခဲ့သည်။ ကျေးဇူးပြု၍ သင့်အီးမေးလ်လိပ်စာကို စစ်ဆေးပြီး ထပ်စမ်းကြည့်ပါ။."
       );
       setMessage(null);
       setError(
-        "Une erreur s'est produite. Veuillez vérifier votre adresse e-mail et réessayer."
+        "အမှားအယွင်းတစ်ခု ဖြစ်ပွားခဲ့သည်။ ကျေးဇူးပြု၍ သင့်အီးမေးလ်လိပ်စာကို စစ်ဆေးပြီး ထပ်စမ်းကြည့်ပါ။"
       );
     }
   };
@@ -107,19 +107,19 @@ export default function ForgotPassword() {
                   type="submit"
                   className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Envoyer
+                  ပို့ပါ
                 </button>
               </div>
             </form>
           </div>
 
           <p className="mt-10 text-center text-sm text-gray-500">
-            Pas encore membre ?{" "}
+           Member ဝင်မဟုတ်သေးဘူးလား ?{" "}
             <Link
               href="/auth/sigin"
               className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
             >
-              Inscription
+              အကောင့်ဖွင့်မယ်
             </Link>
           </p>
         </div>
