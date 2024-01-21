@@ -36,7 +36,7 @@ export default function ForgotPassword() {
           <div className="ir th up ht">
             <div className="uz ae pf pl">
               <div className="ia th af ae">
-                <h1 className="h2 ah">Changez votre mot de passe</h1>
+                <h1 className="h2 ah">သင့်၏လျှို့ဝှက်နံပါတ်ကိုပြောင်းလဲပါ</h1>
               </div>
 
               <div className="iu th">
@@ -58,7 +58,7 @@ export default function ForgotPassword() {
                   {message && <div>{message}</div>}
                   <div className="al">
                     <button type="submit" className="r fr op lc le">
-                      Réinitialiser le mot de passe
+                      လျှို့ဝှတ်နံပါတ်အားမူလအတိုင်းပြန်လုပ်သည်
                     </button>
                   </div>
                 </form>
