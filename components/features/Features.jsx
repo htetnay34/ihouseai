@@ -4,7 +4,7 @@ import { Tab } from "@headlessui/react";
 import clsx from "clsx";
 
 import screenshotContacts from "@/assets/login1.png";
-import screenshotProfitLoss from "@/assets/dashbord1.png";
+import screenshotProfitLoss from "@/assets/dashboard1.png";
 import screenshotInventory from "@/assets/payment1.png";
 
 import { Container } from "../Container";
