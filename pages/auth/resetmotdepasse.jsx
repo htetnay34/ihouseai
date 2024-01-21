@@ -9,8 +9,8 @@ export default function ReinitialiserMotsdePasse() {
   return (
     <>
           <Head>
-        <title>StudioIA - Mot de passe oublié</title>
-        <link rel="canonical" href="https://www.studioia-interieur.fr/auth/resetmotdepasse" />
+        <title>iHouse AI - Interior</title>
+        <link rel="canonical" href="https://ihouseai.vercel.app/auth/resetmotdepasse" />
 
       </Head>
         <Navbar/>
