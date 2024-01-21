@@ -19,7 +19,7 @@ export default function HeaderExemple({ NameExemple }) {
     <div className="lg:flex flex-col xl:flex-row justify-start lg:items-center lg:justify-between gap-8">
       <div className="min-w-0 flex-1">
         <h2 className="mt-2 text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
-          Exemples de {NameExemple}
+          နမှုနာ {NameExemple}
         </h2>
         <div className="mt-1 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
           <div className="mt-2 flex items-center text-sm text-gray-500">
@@ -27,7 +27,7 @@ export default function HeaderExemple({ NameExemple }) {
               className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
               aria-hidden="true"
             />
-            {coins} crédits
+            {coins} Credits
           </div>
           <div className="mt-2 flex items-center text-sm text-gray-500"></div>
         </div>
@@ -42,7 +42,7 @@ export default function HeaderExemple({ NameExemple }) {
               className="-ml-0.5 mr-1.5 h-5 w-5 text-white"
               aria-hidden="true"
             />
-            Acheter Crédits
+            Credits ဝယ်ယူမယ်
           </Link>
         </span>
       </div>
