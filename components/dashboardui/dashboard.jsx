@@ -1,7 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
 import { Dialog, Transition, Menu } from "@headlessui/react";
-import React, { useState, useEffect } from 'react';
-
 
 import {
   Bars3Icon,
@@ -51,62 +49,6 @@ import HeaderExemple from "./headerexemple";
 import Link from "next/link";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-
-const YourComponent = () => {
-  const [modePersonnalise, setModePersonnalise] = useState(false);
-  const [myanmarText, setMyanmarText] = useState('');
-  const [translatedText, setTranslatedText] = useState('');
-
-  const handleCheckboxChange = () => {
-    setModePersonnalise(!modePersonnalise);
-  };
-
-  const handleTextareaChange = (event) => {
-    setMyanmarText(event.target.value);
-  };
-
-  const translateText = async (text) => {
-    try {
-      const response = await fetch(
-        `https://api.mymemory.translated.net/get?q=${encodeURIComponent(
-          text
-        )}&langpair=my|en`
-      );
-
-      const result = await response.json();
-      if (result && result.responseData && result.responseData.translatedText) {
-        setTranslatedText(result.responseData.translatedText);
-      } else {
-        console.error('Translation failed:', result);
-        setTranslatedText('Translation failed');
-      }
-    } catch (error) {
-      console.error('Translation error:', error);
-      setTranslatedText('Translation failed');
-    }
-  };
-
-  const handleTextareaBlur = () => {
-    if (modePersonnalise) {
-      // Debounce the translation with a delay of 2000 milliseconds (2 seconds)
-      setTimeout(() => {
-        translateText(myanmarText);
-      }, 2000);
-    }
-  };
-
-  useEffect(() => {
-    if (modePersonnalise) {
-      // Translate text initially when mode is enabled
-      translateText(myanmarText);
-    } else {
-      // Clear translated text when mode is disabled
-      setTranslatedText('');
-    }
-  }, [modePersonnalise]);
-
-
-
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -1075,44 +1017,43 @@ export default function Dashboard() {
               </div>
 
               <div className="Selecteur w-full">
-      <div>
-        <div className="flex w-full items-center">
-          <label
-            htmlFor="comment"
-            className="block font-semibold leading-6 text-gray-900"
-          >
-            သင့်စိတ်ကြိုက် Prompt ရေးမယ်
-          </label>
-          <div className="ml-auto flex items-center">
-            <label
-              htmlFor="Personnaliser votre requête"
-              className="select-none font-sm text-sm text-gray-900 mr-2"
-            ></label>
-            <input
-              id="Personnaliser votre requête"
-              name="Personnaliser votre requête"
-              type="checkbox"
-              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600 ml-auto"
-              checked={modePersonnalise}
-              onChange={handleCheckboxChange}
-            />{" "}
-          </div>
-        </div>
+                <div>
+                  <div className="flex w-full items-center">
+                    <label
+                      htmlFor="comment"
+                      className="block font-semibold leading-6 text-gray-900"
+                    >
+                      သင့်စိတ်ကြိုက် Prompt ရေးမယ်
+                    </label>
+                    <div className="ml-auto flex items-center">
+                      <label
+                        htmlFor="Personnaliser votre requête"
+                        className="select-none font-sm text-sm text-gray-900 mr-2"
+                      ></label>
+                      <input
+                        id="Personnaliser votre requête"
+                        name="Personnaliser votre requête"
+                        type="checkbox"
+                        className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600 ml-auto"
+                        checked={modePersonnalise}
+                        onChange={handleCheckboxChange}
+                      />{" "}
+                    </div>
+                  </div>
 
-        <div className="mt-2">
-          <textarea
-            rows={4}
-            name="comment"
-            id="comment"
-            className="block w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-            value={modePersonnalise ? translatedText : myanmarText}
-            onChange={handleTextareaChange}
-            onBlur={handleTextareaBlur}
-            disabled={!modePersonnalise}
-          />
-        </div>
-      </div>
-    </div>
+                  <div className="mt-2">
+                    <textarea
+                      rows={4}
+                      name="comment"
+                      id="comment"
+                      className="block w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      defaultValue={""}
+                      onChange={handleSelect2}
+                      disabled={!modePersonnalise}
+                    />
+                  </div>
+                </div>
+              </div>
 
               <div className="Selecteur w-full"></div>
               <div className="Selecteur w-full"></div>
