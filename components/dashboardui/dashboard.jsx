@@ -1173,7 +1173,7 @@ export default function Dashboard() {
               {historique && <HeaderHistorique />}
               {historique && <Historique />}
 
-              {SalonExemple && <HeaderExemple NameExemple={"Salon"} />}
+              {SalonExemple && <HeaderExemple NameExemple={"အလှပြင်ဆိုင်"} />}
               {SalonExemple && <Exemple listImageExemple={SalonExempleImage} />}
 
               {SalleMiamExemple && (
@@ -1183,26 +1183,26 @@ export default function Dashboard() {
                 <Exemple listImageExemple={SalleMiamExempleImage} />
               )}
 
-              {ChambreExemple && <HeaderExemple NameExemple={"Chambre"} />}
+              {ChambreExemple && <HeaderExemple NameExemple={"အခန်း"} />}
               {ChambreExemple && (
                 <Exemple listImageExemple={ChambreExempleImage} />
               )}
 
-              {DoucheExemple && <HeaderExemple NameExemple={"Salle de bain"} />}
+              {DoucheExemple && <HeaderExemple NameExemple={"ရေချိုးခန်း"} />}
               {DoucheExemple && (
                 <Exemple listImageExemple={DoucheExempleImage} />
               )}
 
-              {CuisineExemple && <HeaderExemple NameExemple={"Cuisine"} />}
+              {CuisineExemple && <HeaderExemple NameExemple={"မီးဖိုချောင်"} />}
               {CuisineExemple && (
                 <Exemple listImageExemple={CuisineExempleImage} />
               )}
 
-              {SousSol && <HeaderExemple NameExemple={"Sous-sol"} />}
+              {SousSol && <HeaderExemple NameExemple={"မြေအောက်ခန်း"} />}
               {SousSol && <Exemple listImageExemple={SousSolExempleImage} />}
 
               {TerrasseExterieure && (
-                <HeaderExemple NameExemple={"Terrasse extérieure"} />
+                <HeaderExemple NameExemple={"လဟာပြင်"} />
               )}
               {TerrasseExterieure && (
                 <Exemple listImageExemple={TerrasseExempleImage} />
