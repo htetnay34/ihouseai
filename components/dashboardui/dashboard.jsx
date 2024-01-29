@@ -538,7 +538,7 @@ export default function Dashboard() {
                 },
                 body: JSON.stringify({
                   image: downloadURLFirebase.url, // Utiliser la valeur de "url" ici
-                  structure: "photomaker",
+                  structure: "hough",
                   prompt: prompt,
                   scale: 9,
                   a_prompt:
