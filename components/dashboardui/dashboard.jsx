@@ -690,7 +690,7 @@ export default function Dashboard() {
                       <img
                         className="h-8 w-auto"
                         src="@/assets/Logo.png"
-                        alt="StudioIA - interieur"
+                        alt="iHouse AI"
                       />
                     </div>
                     <nav className="flex flex-1 flex-col">
