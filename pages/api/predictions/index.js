@@ -11,11 +11,11 @@ export default async function handler(req, res) {
     );
   }
 
-  const prediction = await replicate.run(
+  const prediction = await replicate.predictions.create({
     // Pinned to a specific version of Stable Diffusion
     // See https://replicate.com/stability-ai/stable-diffusion/versions
-    "tencentarc/photomaker:ddfc2b08d209f9fa8c1eca692712918bd449f695dabb4a958da31802a9570fe4",
-{
+    version: "854e8727697a057c525cdb45ab037f64ecca770a1769cc52287c2e56472a247b",
+
     // This is the text prompt that will be submitted by a form on the frontend
     input: {
       image: req.body.image, // Utiliser la valeur de "url" ici
@@ -25,9 +25,10 @@ export default async function handler(req, res) {
       a_prompt: req.body.a_prompt,
       n_prompt: req.body.n_prompt,
     },
-}
- 
-);
+
+    weebhook: "https://housemakere.vercel.app//api/replicate-webhook",
+
+  });
 
   if (prediction?.error) {
     res.statusCode = 500;
