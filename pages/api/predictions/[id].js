@@ -5,10 +5,7 @@ const replicate = new Replicate({
 });
 
 export default async function handler(req, res) {
-  // Specify the model identifier
-  const modelIdentifier = "tencentarc/photomaker";
-
-  const prediction = await replicate.predictions.get(modelIdentifier);
+  const prediction = await replicate.predictions.get(req.query.id);
 
   if (prediction?.error) {
     res.statusCode = 500;
